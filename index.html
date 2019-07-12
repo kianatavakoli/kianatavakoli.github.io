@@ -27,18 +27,11 @@ href= "myStyles.css"> -->
   font-
 } -->
 
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <!-- <body style="background-image: url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80');"> -->
 
   <head>
-
-    <style>
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    </style>
 
     <script src= "jscript.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,6 +90,28 @@ href= "myStyles.css"> -->
       background-color: #555;
     }
     </style>
+
+    <link rel="stylesheet" href="https://openlayers.org/en/v5.3.0/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+
+
+    <style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    </style>
+
+    <script src="mappy.js"></script>
+
   </head>
 
   <body>
@@ -164,5 +179,32 @@ href= "myStyles.css"> -->
       <center><p>Email: kianatavakolii@gmail.com<p>
     </div>
     </div>
+
+    <center><h2><p style="color:rgb(42,91,134);font-size: 45px;">MY FAVORITE PLACES!</h2>
+        <!-- <div id="map" class="map"></div>
+        <button id="Philz">Philz</button>
+        <script type="text/javascript">
+          var map = new ol.Map({
+            target: 'map',
+            layers: [
+              new ol.layer.Tile({
+                source: new ol.source.OSM()
+              })
+            ],
+            view: new ol.View({
+              center: ol.proj.fromLonLat([37.41, 8.82]),
+              zoom: 4
+            })
+          });
+        </script> -->
+ <p>
+ <button onclick="panHome()">London</button>
+ <button onclick="goToPhilz()">Philz</button>
+ <button onclick="goToBiac()">BIAC</button>
+ <button onclick="goToStanfordOval()">Stanford Oval</button>
+
+ </p>
+ <div id="map" class="map"></div>
+
   </body>
 <html>
